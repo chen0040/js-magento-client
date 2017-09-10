@@ -1,1 +1,1 @@
-module.exports = require('./build/LRUCache.js');
+module.exports = require('./build/MagentoApi.js');

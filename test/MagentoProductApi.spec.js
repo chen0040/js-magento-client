@@ -1,4 +1,4 @@
-import MagentoProductApi from './MagentoProductApi';
+import {MagentoProductApi} from '../build/MagentoApi';
 import MagentoAccountInfo from './MagentoAccountInfo';
 
 describe('Magento Category Api', () => {

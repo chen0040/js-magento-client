@@ -1,5 +1,6 @@
-import MagentoCategoryApi from './MagentoCategoryApi';
+import {MagentoCategoryApi} from '../build/MagentoApi';
 import MagentoAccountInfo from './MagentoAccountInfo';
+import expect from 'expect';
 
 describe('Magento Category Api', () => {
    it('can load the root category of the magento site', (done) => {

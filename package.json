@@ -1,7 +1,7 @@
 {
-  "name": "js-lrucache",
-  "version": "1.0.8",
-  "description": "Javascript implementation of least recently used cache",
+  "name": "js-magento-client",
+  "version": "1.0.1",
+  "description": "Javascript implementation of magento rest api in ES6",
   "author": "Xianshun Chen",
   "contributors": [
     "Xianshun Chen <xs0040@gmail.com>"
@@ -13,27 +13,29 @@
   },
   "scripts": {
     "test": "npm run compile && mocha --compilers js:babel-core/register",
-	"prepublish": "npm run compile",
+    "prepublish": "npm run compile",
     "compile": "./node_modules/.bin/babel --presets es2015,stage-0 -d build/ src/",
     "webpack": "./node_modules/.bin/webpack",
     "cover": "istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "bin": {
-    "js-lrucache": "./build/LRUCache.js"
+    "js-magento-client": "./build/LRUCache.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chen0040/js-lrucache.git"
+    "url": "git+https://github.com/chen0040/js-magento-client.git"
   },
   "keywords": [
-    "cache",
-    "lrucache",
-    "lru-cache",
-    "lru",
-    "least recently used"
+    "js-client",
+    "magento-client",
+    "magento-rest",
+    "rest-api",
+    "magento2"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.16.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -47,7 +49,7 @@
     "webpack": "^3.5.6"
   },
   "bugs": {
-    "url": "https://github.com/chen0040/js-lrucache/issues"
+    "url": "https://github.com/chen0040/js-magento-client/issues"
   },
-  "homepage": "https://github.com/chen0040/js-lrucache#readme"
+  "homepage": "https://github.com/chen0040/js-magento-client#readme"
 }

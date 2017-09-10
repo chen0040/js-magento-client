@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
      entry: [
-		'./src/LRUCache.js'
+		'./src/MagentoApi.js'
 	 ],
      output: {
          path: path.resolve(__dirname, 'webpack_build'),
