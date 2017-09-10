@@ -1,0 +1,53 @@
+{
+  "name": "js-lrucache",
+  "version": "1.0.8",
+  "description": "Javascript implementation of least recently used cache",
+  "author": "Xianshun Chen",
+  "contributors": [
+    "Xianshun Chen <xs0040@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run compile && mocha --compilers js:babel-core/register",
+	"prepublish": "npm run compile",
+    "compile": "./node_modules/.bin/babel --presets es2015,stage-0 -d build/ src/",
+    "webpack": "./node_modules/.bin/webpack",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "bin": {
+    "js-lrucache": "./build/LRUCache.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen0040/js-lrucache.git"
+  },
+  "keywords": [
+    "cache",
+    "lrucache",
+    "lru-cache",
+    "lru",
+    "least recently used"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.1",
+    "webpack": "^3.5.6"
+  },
+  "bugs": {
+    "url": "https://github.com/chen0040/js-lrucache/issues"
+  },
+  "homepage": "https://github.com/chen0040/js-lrucache#readme"
+}
