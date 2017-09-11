@@ -1,6 +1,6 @@
 {
   "name": "js-magento-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Javascript implementation of magento rest api in ES6",
   "author": "Xianshun Chen",
   "contributors": [

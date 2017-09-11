@@ -13,7 +13,7 @@ npm install js-magento-client
 ### Login Api
 
 ```javascript
-import {MagentoAccountApi} from '../build/MagentoApi';
+import {MagentoAccountApi} from 'js-magento-client';
 import expect from 'expect';
 
 let url = 'magento-url';
@@ -38,7 +38,7 @@ MagentoAccountApi.loginAsClient(
 ### Root Category Api
 
 ```javascript
-import {MagentoCategoryApi} from '../build/MagentoApi';
+import {MagentoCategoryApi} from 'js-magento-client';
 import expect from 'expect';
 
 let url = 'magento-url';
@@ -56,7 +56,7 @@ MagentoCategoryApi.loadRootCategory(url).then(response => {
 ### Load Products in a particular category
 
 ```javascript
-import {MagentoCategoryApi} from '../build/MagentoApi';
+import {MagentoCategoryApi} from 'js-magento-client';
 import expect from 'expect';
 
 let categoryId = 19;
@@ -75,7 +75,7 @@ MagentoCategoryApi.loadProducts(url, categoryId).then(response => {
 ### Load Product by SKU
 
 ```javascript
-import {MagentoProductApi} from '../build/MagentoApi';
+import {MagentoProductApi} from 'js-magento-client';
 import expect from 'expect';
 
 let sku = 'product_dynamic_17';
