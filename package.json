@@ -1,6 +1,6 @@
 {
   "name": "js-magento-client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Javascript implementation of magento rest api in ES6",
   "author": "Xianshun Chen",
   "contributors": [
@@ -20,7 +20,7 @@
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "bin": {
-    "js-magento-client": "./build/LRUCache.js"
+    "js-magento-client": "./build/MagentoApi.js"
   },
   "repository": {
     "type": "git",
